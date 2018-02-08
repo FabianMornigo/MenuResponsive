@@ -1,0 +1,181 @@
+	/*start stilos*/
+	/*Fuente de google fonts*/
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(https://fonts.gstatic.com/s/raleway/v11/cbAbzEjxTdN5KKmS-gA0tSEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	background-color: #0A7E5C;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+header {
+	width: 100%;
+}
+
+header nav {
+	width: 90%;
+	margin:20px auto;
+	max-width: 1000px;
+	background-color: #1387CA;
+}
+
+header nav ul {
+	overflow: hidden;
+	list-style: none;
+}
+
+header nav ul li {
+	float: left;
+}
+
+header nav ul li a {
+	color: #DBCACA;
+	padding: 20px;
+	display: block;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	background: #589370;
+}
+
+header nav ul li a span {
+	margin-right: 10px;
+}
+
+.menu_blas {
+	display: none;
+}
+
+/*start Section*/
+/*/////////////////*/
+section {
+	padding: 20px;
+}
+
+/*start Media querys*/
+/*///////////////////////*/
+@media screen and (max-width: 500px) {
+	header nav {
+		/*box-sizing: border-box;*/
+		width: 60%;
+		height: 100%;
+		left: -100%
+		margin:0px;
+		position: fixed;
+		top: 46px;
+	}
+
+	header nav ul li {
+		display: block;
+		float: none;
+		border-bottom: 1px solid rgba(255,255,255, .8);
+	}
+
+	.menu_blas {
+        box-sizing: border-box;
+		display: inline-block;
+		width: 100%;
+		background: red;
+        top: 0;
+	}
+
+	.menu_blas .bt-menu {
+		display: inline-block;
+		width: 100%;
+		padding: 20px;
+		background: blue; /*color body*/
+		color: #fff;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 20px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+
+	}
+
+	.menu_blas span {
+		float: left;
+		font-size: 25px;
+        background-color: transparent;
+	}
+
+	.menu_blas .bt-menu p {
+		text-align: center;
+	}
+}
+/*end Media querys*/
+/*////////////////////*/
+
+.contenido {
+	width: 500px;
+	margin:20px auto;
+	text-align: justify;
+}
+
+.contenido p {
+	margin-bottom: 1em;
+}
+
+.button {
+	background: #7f8c8d;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.25em; /*16px*/
+	margin:20px;
+	padding: 10px 0px;
+	text-align: center;
+	width: 200px;
+	text-decoration: none;
+	box-shadow: 0px 3px 0px #373c3c;
+}
+
+/*colores*/
+.button.blue {
+	background: #3498db;
+	box-shadow: 0px 3px 0px #266792;
+}
+
+.button.orange {
+	background: #E85D11;
+	box-shadow: 0px 3px 0px #A33D06;
+}
+
+/*tamaños*/
+.button.medium {
+	width: 300px;
+}
+
+/*formas*/
+.button.round {
+	width: 300px;
+	border-radius: 50%
+}
+
+.button:hover {
+	box-shadow: 0px 0px 0px;
+	padding-top: 7px;
+}
+
+.arrow-arriba {
+	display: none;
+	padding: 20px;
+	background-color: #024959;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
